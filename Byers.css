@@ -8,6 +8,10 @@ body {
 
 .container {
     width: 100%;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    text-align: center;
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
@@ -79,6 +83,7 @@ nav ul li a:hover {
 .about {
     text-align: center;
     padding: 50px 0;
+    margin: auto;
 }
 
 .about h1 {
@@ -89,6 +94,7 @@ nav ul li a:hover {
 
 .about p {
     font-size: 16px;
+    margin: auto;
     color: #666;
     line-height: 1.6;
     margin-bottom: 15px;
@@ -102,7 +108,7 @@ nav ul li a:hover {
 
 .profile-picture img {
     width: 250px;
-    height: 350px;
+    height: auto;
     border-radius: 75%;
     border: 5px solid #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -112,6 +118,7 @@ nav ul li a:hover {
 .about-section {
     margin-bottom: 30px;
     text-align: center;
+    margin: auto;
 }
 
 .about-section h2 {
@@ -180,27 +187,6 @@ nav ul li a:hover {
     background-color: #ddd;
 }
 
-/* Resume Styles */
-.pdf-container {
-    width: 100%;
-    height: 200vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #f4f4f4;
-}
-.pdf-wrapper {
-    width: 80%; /* Adjust the width of the PDF container */
-    height: 80%; /* Adjust the height of the PDF container */
-    border: 1px solid #ccc; /* Border color */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Box shadow */
-    overflow: auto; /* Enable scrolling if the PDF is larger than the container */
-}
-.pdf-object {
-    width: 100%;
-    height: 100%;
-}
-
 /* Contact Page Styles */
 .contact {
     text-align: center;
@@ -219,6 +205,14 @@ nav ul li a:hover {
     margin-bottom: 20px;
 }
 
+.containerText{
+    width: 60%;
+    text-align: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
 /* Footer styles */
 footer {
     background-color: #221C35;
@@ -229,21 +223,3 @@ footer {
     bottom: 0;
     width: 100%;
 }
-/* Media Query for Phones */
-@media only screen and (max-width: 600px) {
-    header h1 {
-        font-size: 20px;
-    }
-    
-    nav ul li {
-        margin: 0 5px;
-    }
-}
-
-/* Media Query for Tablets and Computers */
-@media only screen and (min-width: 601px) {
-    header h1 {
-        font-size: 28px;
-    }
-}
-
