@@ -1,0 +1,232 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Navbar Styles */
+header {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #221C35;
+    color: #fff;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Home Page */
+.home {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.home p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.gallery img {
+    width: 300px;
+    margin: 10px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+}
+
+/* About Page */
+.about {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.about h1 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.about p {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+/* Profile Picture Styles */
+.profile-picture {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.profile-picture img {
+    width: 250px;
+    height: 350px;
+    border-radius: 75%;
+    border: 5px solid #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Skills, Interests, Education, Experience, Awards */
+.about-section {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.about-section h2 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.about-section ul {
+    padding-left: 0;
+    margin-bottom: 15px;
+    list-style-position: inside;
+    display: inline-block;
+    text-align: left;
+}
+
+.about-section ul li {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.6;
+    list-style-type: disc;
+    text-align: left;
+}
+
+
+/* CSS for styling tables */
+/* Table container */
+.event-table-container {
+    margin: 20px;
+}
+
+/* Actual table */
+.event-table {
+    width: 100%;
+    border-collapse: collapse;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* Table header */
+.event-table thead {
+    background-color: #333;
+    color: white;
+}
+
+/* Table header cells */
+.event-table th {
+    padding: 12px;
+    text-align: left;
+}
+
+/* Table body cells */
+.event-table td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Alternate row background color */
+.event-table tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Hover effect on rows */
+.event-table tbody tr:hover {
+    background-color: #ddd;
+}
+
+/* Resume Styles */
+.pdf-container {
+    width: 100%;
+    height: 200vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f4f4f4;
+}
+.pdf-wrapper {
+    width: 80%; /* Adjust the width of the PDF container */
+    height: 80%; /* Adjust the height of the PDF container */
+    border: 1px solid #ccc; /* Border color */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Box shadow */
+    overflow: auto; /* Enable scrolling if the PDF is larger than the container */
+}
+.pdf-object {
+    width: 100%;
+    height: 100%;
+}
+
+/* Contact Page Styles */
+.contact {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.contact h2 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.contact p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+/* Footer styles */
+footer {
+    background-color: #221C35;
+    color: white;
+    text-align: center;
+    padding: 2px 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
