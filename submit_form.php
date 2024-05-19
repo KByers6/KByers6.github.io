@@ -7,7 +7,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $message = sanitize_input($_POST['message']);
     
     // Set the recipient email address
-    $to = 'recipient@example.com';  // Replace with your email address
+    $to = 'kjbyers6@gmail.com';  // Replace with your email address
 
     // Create the email headers
     $headers = "From: $email" . "\r\n" .
