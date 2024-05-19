@@ -1,34 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kolt Byers-Contact</title>
     <link rel="stylesheet" href="Byers.css">
-    <link rel = "shortcut icon" href = "Images/IconHPU.png?" type = "image/x-icon">
+    <link rel="shortcut icon" href="Images/IconHPU.png?" type="image/x-icon">
 
-<style>
-    input[type="text"], textarea {
-        width: 100%;
-        padding: 10px;
-        margin: 5px 0 20px 0;
-        border-radius: 5px;
-        border: 1px solid #ccc;
-    }
-    input[type="submit"] {
-        background-color: #4CAF50;
-        color: white;
-        padding: 10px 20px;
-        border: none;
-        border-radius: 5px;
-        cursor: pointer;
-    }
-    input[type="submit"]:hover {
-        background-color: #45a049;
-    }
-</style>
+    <style>
+        input[type="text"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0 20px 0;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
 
 </head>
+
 <body>
     <header>
         <h1>Kolt Byers</h1>
@@ -60,28 +65,30 @@
         </div>
     </div>
 
-<div class="containerText">
-    <h2>Contact Me</h2>
-    <form action="submit_form.php" method="post">
-        <label for="name">Your Name</label>
-        <input type="text" id="name" name="name" placeholder="Your name.." required>
+    <div class="containerText">
+        <h2>Contact Me</h2>
+        <form action="submit_form.php" method="post">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" placeholder="Your name.." required>
 
-        <label for="email">Your Email</label>
-        <input type="text" id="email" name="email" placeholder="Your email.." required>
+            <label for="email">Your Email</label>
+            <input type="text" id="email" name="email" placeholder="Your email.." required>
 
-        <label for="subject">Subject</label>
-        <input type="text" id="subject" name="subject" placeholder="Subject.." required>
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject" placeholder="Subject.." required>
 
-        <label for="message">Message</label>
-        <textarea id="message" name="message" placeholder="Write something.." style="height:200px" required></textarea>
+            <label for="message">Message</label>
+            <textarea id="message" name="message" placeholder="Write something.." style="height:200px"
+                required></textarea>
 
-        <input type="submit" value="Submit">
-    </form>
-</div>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
 
-    
+
     <footer>
         <p>&copy; Copyright 2024 Kolt Byers</p>
     </footer>
 </body>
+
 </html>
