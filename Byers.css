@@ -32,6 +32,7 @@ header h1 {
 }
 
 nav ul {
+    text-align: center;
     list-style: none;
     padding: 0;
 }
@@ -48,6 +49,12 @@ nav ul li a {
 
 nav ul li a:hover {
     text-decoration: underline;
+}
+
+.navbar-logo {
+    height: 50px; 
+    padding: 10px; 
+    margin-right: 20px; 
 }
 
 /* Home Page */
