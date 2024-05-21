@@ -39,6 +39,7 @@ nav ul li a:hover {
 }
 
 .navbar-logo { 
+    size: 50px 50px;
     padding: 30px; 
     margin-right: 20px; 
 }
@@ -207,7 +208,6 @@ nav ul li a:hover {
     padding: 20px 20px;
 }
 
-/*Fade in styles*/
 /* Initial fade-in styles */
 .fade-in-section {
     opacity: 0;

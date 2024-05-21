@@ -1,5 +1,3 @@
-// scripts.js
-
 // Function to check if an element is in the viewport
 function isElementInViewport(el) {
     const rect = el.getBoundingClientRect();
@@ -13,16 +11,14 @@ function isElementInViewport(el) {
 
 // Function to add the 'visible' class to elements in the viewport
 function handleScroll() {
-    const sections = document.querySelectorAll('.fade-in-section');
-    sections.forEach((section) => {
-        if (isElementInViewport(section)) {
-            section.classList.add('visible');
-        }
-    });
+    const container = document.querySelector('.fade-in-section');
+    if (isElementInViewport(container)) {
+        container.classList.add('visible');
+    }
 }
 
 // Listen for scroll events
 window.addEventListener('scroll', handleScroll);
 
-// Initial check in case some sections are already in the viewport
+// Initial check in case the container is already in the viewport
 handleScroll();
