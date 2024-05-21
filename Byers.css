@@ -26,7 +26,7 @@ nav ul {
 
 nav ul li {
     display: inline;
-    margin: 0 40px;
+    margin: 0 50px;
 }
 
 nav ul li a {
@@ -35,7 +35,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: whitesmoke;
+    color: grey;
 }
 
 .navbar-logo { 
@@ -205,6 +205,20 @@ nav ul li a:hover {
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px 20px;
+}
+
+/*Fade in styles*/
+/* Initial fade-in styles */
+.fade-in-section {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+/* When the section is visible, apply these styles */
+.fade-in-section.visible {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 /* Footer styles */

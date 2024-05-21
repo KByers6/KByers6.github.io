@@ -9,9 +9,41 @@
     <link rel="shortcut icon" href="Images/IconHPU.png?" type="image/x-icon">
 </head>
 
+<script>
+
+    // Function to check if an element is in the viewport
+    function isElementInViewport(el) {
+        const rect = el.getBoundingClientRect();
+        return (
+            rect.top >= 0 &&
+            rect.left >= 0 &&
+            rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+            rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+        );
+    }
+
+    // Function to add the 'visible' class to elements in the viewport
+    function handleScroll() {
+        const sections = document.querySelectorAll('.fade-in-section');
+        sections.forEach((section) => {
+            if (isElementInViewport(section)) {
+                section.classList.add('visible');
+            }
+        });
+    }
+
+    // Listen for scroll events
+    window.addEventListener('scroll', handleScroll);
+
+    // Initial check in case some sections are already in the viewport
+    handleScroll();
+
+</script>
+
+
 <body>
     <nav>
-        <img src="Images/Kolt-Byers-SignatureGenerator.png" alt="Logo" class="navbar-logo">
+        <img src="Images/signature.png" alt="Logo" class="navbar-logo">
         <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About</a></li>
@@ -21,26 +53,26 @@
         </ul>
     </nav>
 
+    <div class="fade-in-section">
+        <div class="home">
+            <h1>Welcome to My Personal Website</h1>
+        </div>
 
-    <div class="home">
-        <h1>Welcome to My Personal Website</h1>
+        <div class="gallery">
+            <img src="Images/IMG_0368.JPG" alt="Image 1">
+            <img src="Images/IMG_0370.JPG" alt="Image 2">
+            <img src="Images/IMG_0371.JPG" alt="Image 3">
+            <img src="Images/IMG_0383.JPG" alt="Image 4">
+            <img src="Images/IMG_0497.PNG" alt="Image 5">
+            <img src="Images/IMG_0424.JPG" alt="Image 6">
+            <img src="Images/IMG_0427.JPG" alt="Image 7">
+            <img src="Images/IMG_0487.JPG" alt="Image 8">
+            <img src="Images/IMG_0449.JPG" alt="Image 9">
+            <img src="Images/IMG_0461.JPG" alt="Image 10">
+            <img src="Images/IMG_0465.JPG" alt="Image 11">
+            <img src="Images/IMG_0482.JPG" alt="Image 12">
+        </div>
     </div>
-
-    <div class="gallery">
-        <img src="Images/IMG_0368.JPG" alt="Image 1">
-        <img src="Images/IMG_0370.JPG" alt="Image 2">
-        <img src="Images/IMG_0371.JPG" alt="Image 3">
-        <img src="Images/IMG_0383.JPG" alt="Image 4">
-        <img src="Images/IMG_0497.PNG" alt="Image 5">
-        <img src="Images/IMG_0424.JPG" alt="Image 6">
-        <img src="Images/IMG_0427.JPG" alt="Image 7">
-        <img src="Images/IMG_0487.JPG" alt="Image 8">
-        <img src="Images/IMG_0449.JPG" alt="Image 9">
-        <img src="Images/IMG_0461.JPG" alt="Image 10">
-        <img src="Images/IMG_0465.JPG" alt="Image 11">
-        <img src="Images/IMG_0482.JPG" alt="Image 12">
-    </div>
-
     <footer>
         <p>&copy; Copyright 2024 Kolt Byers</p>
     </footer>
