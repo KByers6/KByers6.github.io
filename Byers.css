@@ -3,7 +3,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #161616;
+    background-color: whitesmoke;
 }
 
 
@@ -16,19 +16,6 @@ body {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
-}
-
-/* Navbar Styles */
-header {
-    text-align: center;
-    padding: 20px 0;
-    background-color: #221C35;
-    color: #fff;
-}
-
-header h1 {
-    margin: 0;
-    font-size: 24px;
 }
 
 nav ul {
@@ -44,15 +31,15 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: #fff;
+    color: black;
 }
 
 nav ul li a:hover {
-    color: rgb(69, 69, 69):
+    color: whitesmoke;
 }
 
 .navbar-logo { 
-    padding: 10px; 
+    padding: 30px; 
     margin-right: 20px; 
 }
 
