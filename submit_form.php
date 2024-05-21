@@ -9,7 +9,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Set the recipient email address
     $to = 'kjbyers6@gmail.com';  // Replace with your email address
 
-    // Create the email headers
     $headers = "From: $email" . "\r\n" .
                "Reply-To: $email" . "\r\n" .
                'X-Mailer: PHP/' . phpversion();
