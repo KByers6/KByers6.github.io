@@ -26,7 +26,7 @@ nav ul {
 
 nav ul li {
     display: inline;
-    margin: 0 50px;
+    margin: 0 30px;
 }
 
 nav ul li a {
@@ -39,7 +39,7 @@ nav ul li a:hover {
 }
 
 .navbar-logo { 
-    size: 50px 50px;
+    height: auto;
     padding: 30px; 
     margin-right: 20px; 
 }
