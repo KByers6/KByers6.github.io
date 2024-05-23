@@ -167,6 +167,7 @@ nav ul li a:hover {
 /* CSS for styling tables */
 /* Table container */
 .event-table-container {
+    padding-top: 30px;
     margin: 20px;
 }
 
