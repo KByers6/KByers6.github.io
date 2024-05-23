@@ -3,7 +3,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-image: url(Images/AirplaneBackground.webp);
+    background-color: whitesmoke;
     /*background-color: whitesmoke;*/
 }
 
@@ -73,7 +73,6 @@ nav ul li a:hover {
 /* Home Page */
 .home {
     text-align: center;
-    color: whitesmoke;
     padding: 50px 0;
 }
 
