@@ -11,28 +11,6 @@
 
 <body>
 
-    <script>
-        function FadeInSection(props) {
-            const [isVisible, setVisible] = React.useState(true);
-            const domRef = React.useRef();
-            React.useEffect(() => {
-                const observer = new IntersectionObserver(entries => {
-                    entries.forEach(entry => setVisible(entry.isIntersecting));
-                });
-                observer.observe(domRef.current);
-                return () => observer.unobserve(domRef.current);
-            }, []);
-            return (
-                <div
-                    className={`fade-in-section ${isVisible ? 'is-visible' : ''}`}
-                    ref={domRef}
-                >
-                    {props.children}
-                </div>
-            );
-        }
-    </script>
-
     <nav class="navbar">
         <img src="Images/signature.webp" alt="Logo" class="navbar-logo">
         <ul>
@@ -44,24 +22,19 @@
         </ul>
     </nav>
 
-    <FadeInSection>
+    <div class="fade-in-section">
         <div class="container">
             <div class="about">
                 <h1>About Me</h1>
-
                 <div class="profile-picture">
                     <img src="Images/IMG_02592.webp" alt="Profile Picture">
                 </div>
-
                 <p>Hello, I'm Kolt Byers. I am a Division I student-athlete attending High Point University. I'm
-                    majoring in
-                    Computer Science. I participate on the track team here at High Point as a decathlete. This is why a
-                    part
-                    of my personal website is a men's decathlon calculator. This website was created as a project for my
-                    Web
-                    Technologies class my senior year!</p>
+                    majoring in Computer Science. I participate on the track team here at High Point as a decathlete.
+                    This is why a part of my personal website is a men's decathlon calculator. This website was
+                    created as a project for my Web Technologies class my senior year!</p>
 
-                <div class="about-section"></br></br></br>
+                <div class="about-section">
                     <h2>My Skills</h2>
                     <ul>
                         <li>HTML</li>
@@ -72,7 +45,7 @@
                     </ul>
                 </div>
 
-                <div class="about-section"></br></br></br>
+                <div class="about-section">
                     <h2>My Interests</h2>
                     <ul>
                         <li>Technology</li>
@@ -82,18 +55,18 @@
                     </ul>
                 </div>
 
-                <div class="about-section"></br></br></br>
+                <div class="about-section">
                     <h2>Education</h2>
                     <p>Bachelor's Degree in Computer Science - High Point University, 2024</p>
                 </div>
 
-                <div class="about-section"></br></br></br>
+                <div class="about-section">
                     <h2>Experience</h2>
                     <p>Tour Guide - Back Country Safari Tours, Summer of 2024</p>
                     <p>Beach Set up Service - Corolla Beach Services, Summer of 2023</p>
                 </div>
 
-                <div class="about-section"></br></br></br>
+                <div class="about-section">
                     <h2>Awards</h2>
                     <ul>
                         <li>Big South Conference Champion Heptathlon (2022-2023 Indoor Season)</li>
@@ -104,7 +77,9 @@
                 </div>
             </div>
         </div>
-    </FadeInSection>
+    </div>
+
+    <script src="scripts.js"></script>
 
     <footer>
         <p>&copy; Copyright 2024 Kolt Byers</p>
