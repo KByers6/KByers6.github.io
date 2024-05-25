@@ -257,7 +257,7 @@ footer {
 
 .footer-image {
     max-width: 10px; /* Adjust the size of the image */
-    height: auto;
+    height: 10px;
     display: block;
     justify-content: right;
     margin: 0 auto;
