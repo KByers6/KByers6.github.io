@@ -245,18 +245,12 @@ footer {
     background-color: #221C35;
     color: white;
     padding: 20px;
-    text-align: center;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+    position: relative;
 }
 
-.footer-content {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
 
 .footer-image {
     max-width: 30px;
@@ -264,10 +258,12 @@ footer {
 }
 
 .footer-link {
-    display: block;
+    position: absolute;
+    right: 20px;
 }
 
 .footer p {
-    align-items: center;
+    text-align: center;
     margin: 0;
+    flex: 1;
 }
