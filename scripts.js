@@ -22,3 +22,4 @@ document.addEventListener('DOMContentLoaded', function() {
         appearOnScroll.observe(fader);
     });
 });
+
