@@ -244,11 +244,11 @@ nav ul li a:hover {
 footer {
     background-color: #221C35;
     color: white;
+    padding: 20px;
     text-align: center;
-    padding: 2px 0;
-    left: 0;
-    bottom: 0;
-    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .footer-content {
@@ -259,7 +259,7 @@ footer {
 }
 
 .footer-image {
-    max-width: 100px;
+    max-width: 30px;
     height: auto;
 }
 
