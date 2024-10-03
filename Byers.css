@@ -21,31 +21,23 @@ body {
 
 .navbar {
     display: flex;
-    align-items: center; /* Align items vertically in the center */
+    align-items: center;
     justify-content: space-between;
-    padding: 10px 20px;
-    position: absolute;
-    width: 90%;
-    top: 0;
-    z-index: 1000; /* Make sure the navbar stays on top */
 }
 
 nav ul {
     display: flex;
-    justify-content: center;
-    align-items: center;
     list-style: none;
-    padding: 0;
-    margin: 0;
 }
 
 nav ul li {
-    margin: 0 5%; /* Space between the menu items */
+    margin-right: 20px; /* Space between the menu items */
 }
 
 nav ul li a {
     text-decoration: none;
     color: black;
+    font-size: 16px;
 }
 
 nav ul li a:hover {
@@ -54,18 +46,14 @@ nav ul li a:hover {
 
 .navbar-logo {
     height: 40px;
-    margin-right: 20px; 
 }
 
 @media (max-width: 575.98px) {
-    .navbar{
-        padding-left: 0px; 
+
+    nav ul li a{
+        font-size: 12px;
     }
 
-    .navbar-logo{
-        height: 20px;
-        margin-right: 0px;
-    }
 }
 
 /* Home Page */
