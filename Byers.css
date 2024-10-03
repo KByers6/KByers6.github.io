@@ -18,11 +18,32 @@ body {
     padding: 50px 20px;
 }
 
+.gradient{
+    background: linear-gradient(56deg, #740794, #eecdf7, #390547);
+    background-size: 600% 600%;
+
+    -moz-animation: AnimationName 30s ease infinite;
+    animation: AnimationName 30s ease infinite;
+
+}
+
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
 
 .navbar {
     display: flex;
+    width: 80%;
+    padding: 0 10% 0;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 nav ul {
@@ -31,13 +52,13 @@ nav ul {
 }
 
 nav ul li {
-    margin-right: 20px; /* Space between the menu items */
+    margin-right: 30px; /* Space between the menu items */
 }
 
 nav ul li a {
     text-decoration: none;
     color: black;
-    font-size: 16px;
+    font-size: 18px;
 }
 
 nav ul li a:hover {
@@ -45,20 +66,13 @@ nav ul li a:hover {
 }
 
 .navbar-logo {
-    height: 40px;
+    display: flex;
+    width: 60%;
+    padding: 5% 20% 0;
+    align-items: center;
+    justify-content: center;
 }
 
-@media (max-width: 575.98px) {
-
-    nav ul li a{
-        font-size: 12px;
-    }
-
-    nav ul li{
-        margin-right:15px;
-    }
-
-}
 
 /* Home Page */
 .home {
