@@ -40,38 +40,31 @@ nav ul {
 }
 
 nav ul li {
-    margin: 0 15px; /* Space between the menu items */
+    margin: 0 5%; /* Space between the menu items */
 }
 
 nav ul li a {
     text-decoration: none;
     color: black;
-    font-size: 16px;
-}
-
-@media (max-width: 300px){
-    nav ul li a{
-        font-size: 8px;
-    }
-
-    nav ul li{
-        margin: 0 0px;
-    }
 }
 
 nav ul li a:hover {
     color: grey;
 }
 
-.navbar-logo { 
+.navbar-logo {
     height: 40px;
     margin-right: 20px; 
 }
 
-@media (max-width: 300px){
+@media (max-width: 575.98px) {
+    .navbar{
+        font-size: 10px;
+        padding: 10px 0px 0px 0px; 
+    }
+
     .navbar-logo{
         height: 20px;
-        margin-right: 10px;
     }
 }
 
