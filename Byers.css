@@ -62,10 +62,10 @@ nav ul li a:hover {
         padding-left: 0px; 
     }
 
-    /*.navbar-logo{
-        height: 20px;
+    .navbar-logo{
+        height: 30px;
         margin-right: 0px;
-    }*/
+    }
 }
 
 /* Home Page */
