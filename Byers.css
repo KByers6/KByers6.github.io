@@ -54,6 +54,10 @@ nav ul li a:hover {
         font-size: 12px;
     }
 
+    nav ul li{
+        margin-right:15px;
+    }
+
 }
 
 /* Home Page */
