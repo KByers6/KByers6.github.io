@@ -26,6 +26,12 @@ body {
     justify-content: center;
 }
 
+@media (min-width: 576px) {
+    nav ul li{
+        margin-right: 25px;
+    }
+}
+
 nav ul {
     display: flex;
     list-style: none;
