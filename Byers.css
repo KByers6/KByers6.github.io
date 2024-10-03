@@ -18,6 +18,7 @@ body {
     padding: 50px 20px;
 }
 
+
 .navbar {
     display: flex;
     align-items: center; /* Align items vertically in the center */
@@ -39,7 +40,7 @@ nav ul {
 }
 
 nav ul li {
-    margin: 0 15px; /* Space between the menu items */
+    margin: 0 10px; /* Space between the menu items */
 }
 
 nav ul li a {
