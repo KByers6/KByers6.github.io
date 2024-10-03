@@ -26,12 +26,6 @@ body {
     justify-content: center;
 }
 
-@media (min-width: 576px) {
-    .navbar{
-        width: 70%;
-    }
-}
-
 nav ul {
     display: flex;
     list-style: none;
@@ -250,7 +244,6 @@ footer {
     color: white;
     padding: 20px;
     display: flex;
-    width: 100%;
     justify-content: center;
     align-items: center;
     position: relative;
@@ -270,7 +263,7 @@ footer {
 }
 
 .footer-link {
-    display: block;
+    display: flex;
 }
 
 .footer p {
